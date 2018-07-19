@@ -1,0 +1,51 @@
+.CalendarContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "header header header"
+                         ". weekdays ."
+                         "back calendar forward"
+                         "footer footer footer"
+}
+
+.CalendarHeader {
+    grid-area: header;
+}
+
+.CalendarWeekDays {
+    grid-area: weekdays;
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 6px auto;
+    width: 610px;
+}
+
+.WeekDayLabel {
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.backArrow {
+    grid-area: back;
+}
+
+.forwardArrow {
+    grid-area: forward;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.CalendarBody {
+    grid-area: calendar;
+    display: flex;
+}
+
+.CalendarDays {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: repeat(7, 1fr);
+    width: 610px;
+    margin: auto;
+}

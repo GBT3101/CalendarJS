@@ -1,0 +1,32 @@
+.DayContainer {
+    height: 80px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.Day {
+    line-height: 82px;
+}
+
+.Enabled {
+    border-color: black;
+    color: black;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.Enabled:not(.picked):hover {
+    background-color: cornflowerblue;
+}
+
+.Disabled {
+    border-color: gray;
+    color: gray;
+    background-color: lavender;
+}
+
+.picked {
+    color: aquamarine;
+    background-color: black;
+    border-color: aquamarine;
+}
